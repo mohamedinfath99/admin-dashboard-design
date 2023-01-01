@@ -1,0 +1,56 @@
+
+.WidgetsSmall{
+    flex: 1;
+    margin-right: 20px;
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 4px 1px #000000; 
+    box-shadow: 0px 0px 4px 1px #000000;
+}
+
+.WidgetsSmallTitle{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.WidgetsSmallImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.WidgetsSmallList{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.WidgetsSmallItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.WidgetsSmallUser{
+    display: flex;
+    flex-direction: column;
+}
+
+.WidgetsSmallBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: none;
+    padding: 7px 10px;
+    background-color: #eeeef7;
+    color: #555;
+    cursor: pointer;
+}
+
+.icon{
+    font-size: 20px !important;
+    margin-right: 5px;
+}

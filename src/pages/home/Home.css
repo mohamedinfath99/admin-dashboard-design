@@ -3,3 +3,8 @@
     flex: 4;
     padding: 20px;
 }
+
+.homeWidgets{
+    display: flex;
+    margin: 20px;
+}
