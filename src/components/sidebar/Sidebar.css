@@ -21,6 +21,11 @@
 }
 
 
+.sidebarList{
+    list-style: none;
+    padding: 5px;
+}
+
 .sidebarListItem{
     padding: 10px;
     cursor: pointer;
