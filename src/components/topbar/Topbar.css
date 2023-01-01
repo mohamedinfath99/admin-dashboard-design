@@ -2,7 +2,7 @@
 .topbar{
     width: 100%;
     height: 50px;
-    background-color: whitesmoke;
+    background-color: rgb(244, 232, 232);
     
     position: sticky;
     top: 0;
