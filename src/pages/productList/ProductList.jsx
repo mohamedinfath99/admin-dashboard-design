@@ -58,7 +58,7 @@ export default function ProductList() {
             field: 'action',
             headerName: 'Action',
             sortable: false,
-            width: 180,
+            width: 150,
             renderCell: (params) => {
                 return (
                     <>

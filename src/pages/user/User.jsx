@@ -112,7 +112,7 @@ export default function User() {
                             <div className="userUpdtedUpload">
                                 <img src="https://avatars.githubusercontent.com/u/106984600?v=4" alr="" className='userUpdateImg' />
 
-                                <label htmlFor="file"><Publish className='publishClassName' /></label>
+                                <label For="file"><Publish className='publishClassName' /></label>
                                 <input type="file" id='file' style={{ display: "none" }} />
                             </div>
                             <button className="userUpdateButton">Update</button>

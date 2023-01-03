@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 export default function UserList() {
 
-    const [ data, setData] = useState(userRows)
+    const [data, setData] = useState(userRows)
 
     const handleDelete = (id) => {
         setData(data.filter(item => item.id !== id))
@@ -58,14 +58,15 @@ export default function UserList() {
             field: 'action',
             headerName: 'Action',
             sortable: false,
-            width: 180,
+            width: 150,
             renderCell: (params) => {
                 return (
                     <>
                         <Link to={"user/" + params.row.id}>
                             <button className="userListEdit">Edit</button>
                         </Link>
-                        <DeleteOutline className='actionIcon' onClick={() => handleDelete(params.row.id)}/>
+
+                        <DeleteOutline className='actionIcon' onClick={() => handleDelete(params.row.id)} />
                     </>
                 )
             }

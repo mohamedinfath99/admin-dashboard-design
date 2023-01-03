@@ -1,6 +1,8 @@
 import React from 'react'
 import "./Sidebar.css"
 import { Home, Poll, Report, Receipt, AccountCircle, Work, Redeem, AttachMoney, Assessment, Mail, Message, Feedback } from '@material-ui/icons';
+import { Link } from 'react-router-dom';
+
 
 export default function Sidebar() {
     return (
@@ -13,18 +15,22 @@ export default function Sidebar() {
 
                     <ul className="sidebarList">
 
-                        <li className="sidebarListItem active">
-                            <Home className='sidebarIcon'/>
-                            Home 
+
+                        <Link to="/" className='link'>
+                            <li className="sidebarListItem active">
+                                <Home className='sidebarIcon' />
+                                Home
+                            </li>
+                        </Link>
+
+
+                        <li className="sidebarListItem">
+                            <Poll className='sidebarIcon' />
+                            Analytics
                         </li>
 
                         <li className="sidebarListItem">
-                            <Poll className='sidebarIcon'/>
-                            Analytics 
-                        </li>
-
-                        <li className="sidebarListItem">
-                            <Receipt className='sidebarIcon'/>
+                            <Receipt className='sidebarIcon' />
                             Sales
                         </li>
 
@@ -36,18 +42,24 @@ export default function Sidebar() {
 
                     <ul className="sidebarList">
 
-                        <li className="sidebarListItem">
-                            <AccountCircle className='sidebarIcon'/>
-                            Users 
-                        </li>
+                        <Link to="/users" className='link'>
+                            <li className="sidebarListItem">
+                                <AccountCircle className='sidebarIcon' />
+                                Users
+                            </li>
+                        </Link>
+
+
+                        <Link to="products"  className='link'>
+                            <li className="sidebarListItem">
+                                <Redeem className='sidebarIcon' />
+                                Products
+                            </li>
+                        </Link>
+
 
                         <li className="sidebarListItem">
-                            <Redeem className='sidebarIcon'/>
-                            Products 
-                        </li>
-
-                        <li className="sidebarListItem">
-                            <AttachMoney className='sidebarIcon'/>
+                            <AttachMoney className='sidebarIcon' />
                             Transactions
                         </li>
 
@@ -65,17 +77,17 @@ export default function Sidebar() {
                     <ul className="sidebarList">
 
                         <li className="sidebarListItem">
-                            <Mail className='sidebarIcon'/>
-                            Mail 
+                            <Mail className='sidebarIcon' />
+                            Mail
                         </li>
 
                         <li className="sidebarListItem">
-                            <Feedback className='sidebarIcon'/>
-                            FeedBack 
+                            <Feedback className='sidebarIcon' />
+                            FeedBack
                         </li>
 
                         <li className="sidebarListItem">
-                            <Message className='sidebarIcon'/>
+                            <Message className='sidebarIcon' />
                             Message
                         </li>
 
@@ -88,13 +100,13 @@ export default function Sidebar() {
                     <ul className="sidebarList">
 
                         <li className="sidebarListItem">
-                            <Work className='sidebarIcon'/>
-                            Manage 
+                            <Work className='sidebarIcon' />
+                            Manage
                         </li>
 
                         <li className="sidebarListItem">
-                            <Poll className='sidebarIcon'/>
-                            Analytics 
+                            <Poll className='sidebarIcon' />
+                            Analytics
                         </li>
 
                         <li className="sidebarListItem">
