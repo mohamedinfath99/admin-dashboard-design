@@ -27,4 +27,3 @@ Open the Terminal & Type (for download node_modules) : npm install
 - STEP – 04
 
 After successfully install node_modules type : npm start
-
